@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/Sirupsen/logrus"
+	"github.com/sirupsen/logrus"
 	influx "github.com/influxdata/influxdb/client/v2"
 )
 
@@ -132,6 +132,7 @@ func (hook *Hook) Levels() []logrus.Level {
 		logrus.WarnLevel,
 		logrus.InfoLevel,
 		logrus.DebugLevel,
+		logrus.TraceLevel,
 	}
 }
 
